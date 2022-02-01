@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pagination Example</h1>
+      <div class="toManyRows">
+        <span>Some row 1 </span>
+        <span>Some row 2 </span>
+        <span>Some row 3 </span>
+        <span>Some row 4 </span>
+        <span>Some row 5 </span>
+        <span>Some row 6 </span>
+        <span>Some row 7 </span>
+        <span>Some row 8 </span>
+        <span>Some row 9 </span>
+        <span>Some row 10 </span>
+      </div>
+      <div
+        class="pagination-container"
+        data-pagination-selector=".toManyRows span"
+        data-pagination-per-page="2"
+        data-pagination-hidden-class="hidden"
+      ></div>
+    </div>
+    <script src="../dist/client_pagination.js"></script>
+  </body>
+</html>
